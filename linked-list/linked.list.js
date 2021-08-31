@@ -1,4 +1,4 @@
-class ListNode {
+class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
@@ -8,44 +8,91 @@ class ListNode {
 class LinkedList {
     constructor (head = null) {
         this.head = head;
+        this.size = 0;
     }
 
-    size() {
-        let count = 0;
-        let node = this.head;
-        while (node) {
-            count ++;
-            node = node.next;
+    add(element) {
+        this.head = new Node(element);
+        let current;
+
+        current = this.head;
+
+        while(current.next) {
+            current = current.next;
         }
-        console.log(count);
-        return count;
+        current.next = this.head;
+        this.size ++;
     }
-    
-    clear() {
-        this.head = null;
-    }
-    
-    getLast() {
-        let lastNode = this.head;
-        if(lastNode) {
-            while (lastNode.next) {
-                lastNode = lastNode.next;
+
+
+    insertAt(element, index) {
+        if(index < 0 || index > this.size)
+            return console.log("Please enter valid index!")
+        
+        else {
+            let node = new Node(element);
+            let current, previus;
+            if (index == 0) {
+                node.next = this.head;
+                this.head = node;
+            } else {
+            current = this.head;
+            let i = 0;
+
+            while(i < index) {
+                i ++;
+                previus = current;
+                current = current.next;
             }
+
+            node.next = current;
+            previus.next = node;
         }
-        return  lastNode;
+            this.size ++;
+        }
     }
-    
-    getFirst() {
-        return this.head;
+
+    removeFrom(index) {
+        if (index < 0 || index >= this.size)
+            return console.log("Please Enter a valid index");
+
+        else {
+            let current, previus, i = 0;
+            current = this.head;
+            previus = current
+
+            if(index === 0) {
+                this.head = current.next;
+            } else {
+                while(i < index) {
+                    i++;
+                    previus = current;
+                    current = current.next;
+                }
+
+                previus.next = current.next;
+            }
+            this.size --;
+            return current.element;
+        }
+    }
+
+    printList() {
+        let current = this.head;
+        let str = "";
+        while (current) {
+            str += current.data;
+            current = this.next;
+        }
+        console.log(str);
+        console.log('size: ', this.size);
     }
 }
 
-let node1 = new ListNode(2);
-let node2 = new ListNode(5);
+let list = new LinkedList();
 
-node1.next = node2;
-let list = new LinkedList(node1);
-
-
-console.log(list.head.next.data);
-console.log(list.size());
+list.add(3);
+list.add(4);
+list.insertAt(5, 1);
+list.removeFrom(1);
+list.printList();
