@@ -1,5 +1,5 @@
 import LinkedNode from "./node";
-import Compare  from "../../linked-list/advanced/node"
+import Compare  from "../../../utils/compare"
 
 export default class LinkedList {
     constructor(compareFunc) {
