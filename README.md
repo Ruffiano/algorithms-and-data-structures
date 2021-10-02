@@ -1,7 +1,5 @@
 # JavaScript Algorithms and Data Structures Experimental
-[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
-
-[![Npm](https://badgen.net/badge/icon/npm?icon=npm&label)](https://npmjs.com/)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)   [![Npm](https://badgen.net/badge/icon/npm?icon=npm&label)](https://npmjs.com/)
 
 ## Data Structures
 
@@ -15,7 +13,7 @@ The implementation of a data structure usually requires writing a set of procedu
 | :------: | :------: |
 | `B` | `A` |
 
-* `B` - [Linked List](src/data-structure/basic/linked-list)
+* `A B` - [Linked List](src/data-structure/linked-list/)
 * Next todo list:
 
   - `A` Linked List
