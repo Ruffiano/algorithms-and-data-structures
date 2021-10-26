@@ -14,10 +14,8 @@ The implementation of a data structure usually requires writing a set of procedu
 | `B` | `A` |
 
 * `A B` - [Linked List](src/data-structure/linked-list/)
-* Next todo list:
-
-  - `A` Linked List
-  - Test case  
+* `B` - [Queue](/src/data-structure/queue/)
+* `B` - [Stack](/src/data-structure/stack/)
 #
 
 ## Algorithms
