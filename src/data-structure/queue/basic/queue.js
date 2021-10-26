@@ -1,22 +1,19 @@
 export default class Queue {
-    constructor(simultaneously = 1) {
-        this.simultaneously = simultaneously;
+    constructor() {
         this.index = 0;
         this.queue = [];
     }
-    async queue(func) {
-        if (++this.index > this.simultaneously) {
-            await new Promise(resolve => this.queue.push(resolve));
-        }
-        try {
-            return func();
-        } catch (error) {
-            throw error;
-        } finally {
+    add(queue) {
+        this.queue.push(queue);
+        this.index++;
+    }
+    removeLast() {
+        this.queue.splice(this.index - 1, 1)
+    }
+    receive() {
+        if (this.queue.length) {
             this.index--;
-            if (this.queue.length) {
-                this.queue.shift()();
-            }
+            return this.queue.shift();
         }
     }
 }

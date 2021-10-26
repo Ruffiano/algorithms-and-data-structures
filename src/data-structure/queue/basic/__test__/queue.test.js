@@ -1,28 +1,35 @@
 import { expect, it } from "@jest/globals";
 import Queue from "../queue";
 
-const printNumber = async (n) => {
-    await new Promise(res => setTimeout(res, 5000));
-    console.log(n);
-    return n;
-}
-
-// async function start() {
-//     console.log('starting...');
-//     const order = Queue();
-//     order.queue(() => printNumber(1));
-//     order.queue(() => printNumber(2));
-//     order.queue(() => printNumber(3));
-//     order.queue(() => printNumber(4));
-//     order.queue(() => printNumber(5));
-//     order.queue(() => printNumber(6));
-// }
-
 
 describe('Queue', () => {
-    it('1-test', () => {
-        const order = new Queue();
-        order.queue(() => printNumber(1));
-        expect(1).toBe(1);
+    it('1-test add', () => {
+        const queue = new Queue();
+        queue.add('1');
+        queue.add('2');
+        queue.add('3');
+        expect(queue.receive()).toBe("1");
+    })
+
+    it('2-test add', () => {
+        const queue = new Queue();
+        queue.add(3);
+        queue.add(5);
+        queue.add(1);
+        expect(queue.receive()).toBe(3);
+    })
+    it('3-test', () => {
+        const queue = new Queue();
+        expect(queue.receive()).toBe(undefined);
+    })
+    it('4-test removeLast', () => {
+        const queue = new Queue();
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+        queue.removeLast();
+        queue.receive();
+        queue.receive();
+        expect(queue.receive()).toBe(undefined);
     })
 })
