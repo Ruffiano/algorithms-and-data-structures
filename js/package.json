@@ -12,5 +12,8 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "jest": "26.6.3"
+  },
+  "dependencies": {
+    "it-map": "^3.0.2"
   }
 }
