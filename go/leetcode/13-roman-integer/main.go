@@ -22,5 +22,5 @@ func romanToInt(roman string) int {
 
 func main() {
 	var rn = romanToInt("XVIII")
-	fmt.Println(rn) // Output: 18
+	fmt.Println(rn) // Output: 1
 }
