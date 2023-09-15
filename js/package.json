@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --exec ts-node --transpile-only --compiler-options '{\"module\": \"commonjs\"}' ./src/data-structure/factorial/index.ts",
     "test": "jest --coverage",
     "coverage": "npm run test -- --coverage"
   },
@@ -11,7 +12,12 @@
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
-    "jest": "26.6.3"
+    "jest": "26.6.3",
+    "tslib": "~2.3.1",
+    "typescript": "^4.6.4",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "esbuild": "^0.14.54"
   },
   "dependencies": {
     "it-map": "^3.0.2"
