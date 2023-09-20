@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node --transpile-only --compiler-options '{\"module\": \"commonjs\"}' ./src/twosum/index.ts",
+    "dev": "nodemon --exec ts-node --transpile-only --compiler-options '{\"module\": \"commonjs\"}' ./src/palindrome/index.ts",
     "test": "jest --coverage",
     "coverage": "npm run test -- --coverage"
   },
