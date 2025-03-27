@@ -36,6 +36,25 @@ console.log(numbers); // [10, 20, 30, 40]
 // Elementni yangilash
 numbers[2] = 35;
 console.log(numbers); // [10, 20, 35, 40]
+
+let numbers: number[] = [10, 20, 30, 40, 50];
+
+// 2-indeksdagi elementni o‘chirish
+numbers.splice(2, 1);
+console.log(numbers); // [10, 20, 40, 50]
+
+let numbers: number[] = [10, 20, 30, 40, 50];
+
+// 2-indeksdagi elementni o‘chirish
+delete numbers[2];
+console.log(numbers); // [10, 20, undefined, 40, 50]
+
+let numbers: number[] = [10, 20, 30, 40, 50];
+
+// 30 qiymatdagi elementni o‘chirish
+numbers = numbers.filter((num) => num !== 30);
+console.log(numbers); // [10, 20, 40, 50]
+
 ```
 
 **Nega ishlaydi?**  
