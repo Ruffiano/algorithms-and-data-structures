@@ -3,7 +3,7 @@
 ## **Data Structures**
 
 ### 1. **Basic Data Structures**
-  - [Arrays](./basic-data-structures/arrays/arrays.md)
+  - [V] [Arrays](./basic-data-structures/arrays/arrays.md)
   - [Strings](./basic-data-structures/strings/strings.md)
   - **Linked Lists**
     - [Singly Linked List](./basic-data-structures/singly-linked-list/signly-linked-list.md)

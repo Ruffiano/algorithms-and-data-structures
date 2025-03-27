@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node --transpile-only --compiler-options '{\"module\": \"commonjs\"}' ./src/data-structure-algorithms/bubblesort/index.ts",
+    "dev": "nodemon --exec ts-node --transpile-only --compiler-options '{\"module\": \"commonjs\"}' ./src/index.ts",
     "test": "jest --coverage",
     "coverage": "npm run test -- --coverage"
   },
