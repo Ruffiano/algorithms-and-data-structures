@@ -6,9 +6,9 @@ function isPowerOfTwoBitwise(n: number) {
     return (n & (n -1)) === 0
 }
 
-console.log(isPowerOfTwoBitwise(1)) //true
-console.log(isPowerOfTwoBitwise(2)) //true
-console.log(isPowerOfTwoBitwise(5)) //false
+console.log(isPowerOfTwoBitwise(1)) // true
+console.log(isPowerOfTwoBitwise(2)) // true
+console.log(isPowerOfTwoBitwise(5)) // false
 
 
 // simple solution

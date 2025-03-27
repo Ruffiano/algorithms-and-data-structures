@@ -11,6 +11,6 @@ function isPrimeNumber(n: number) {
 }
 
 
-console.log(isPrimeNumber(1))
-console.log(isPrimeNumber(5))
-console.log(isPrimeNumber(4))
+console.log(isPrimeNumber(3)) // true
+console.log(isPrimeNumber(5)) // true
+console.log(isPrimeNumber(4)) // false
