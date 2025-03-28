@@ -4,7 +4,7 @@
 
 ### 1. **Basic Data Structures**
   - [V] [Arrays](./basic-data-structures/arrays/arrays.md)
-  - [Strings](./basic-data-structures/strings/strings.md)
+  - [V] [Strings](./basic-data-structures/strings/strings.md)
   - **Linked Lists**
     - [Singly Linked List](./basic-data-structures/singly-linked-list/signly-linked-list.md)
     - [Doubly Linked List](./basic-data-structures/doubly-linked-list/doubly-linked-list.md)
@@ -16,28 +16,23 @@
   - [Sets](./basic-data-structures/sets/sets.md)
 
 ### 2. **Tree Data Structures**
-   - Binary Trees
-   - Binary Search Trees
-   - AVL Trees
-   - Red-Black Trees
-   - Trie (Prefix Tree)
-   - Segment Trees
-   - Fenwick Tree (Binary Indexed Tree)
+   - [Binary Trees](./basic-data-structures/binary-trees/binary-trees.md)
+   - [Binary Search Trees](./basic-data-structures/binary-trees/binary-trees.md)
 
 ### 3. **Graphs**
-   - Adjacency Matrix
-   - Adjacency List
-   - Directed and Undirected Graphs
-   - Weighted Graphs
-   - Trees as Special Graphs
+   - [Adjacency Matrix](./basic-data-structures/graphs/graphs.md)
+   - [Adjacency List](./basic-data-structures/graphs/graphs.md)
+   - [Directed and Undirected Graphs](./basic-data-structures/graphs/graphs.md)
+   - [Weighted Graphs](./basic-data-structures/graphs/graphs.md)
+   - [Trees as Special Graphs](./basic-data-structures/graphs/graphs.md)
 
 ### 4. **Other Advanced Data Structures**
    - Heaps
-     - Min Heap
-     - Max Heap
-   - Disjoint Set (Union-Find)
-   - LRU Cache
-   - Bloom Filters
+     - [Min Heap](./basic-data-structures/heaps/heaps.md)
+     - [Max Heap](./basic-data-structures/heaps/heaps.md)
+   - [Disjoint Set (Union-Find)](./basic-data-structures/union-find/union-find.md)
+   - [LRU Cache](./basic-data-structures/LRU-cache/lru-cache.md)
+   - [Bloom Filters](./basic-data-structures/bloom-filters/bloom-filters.md)
 
 ---
 
