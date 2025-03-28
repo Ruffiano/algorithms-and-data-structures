@@ -73,21 +73,20 @@ Map uchun asosiy metodlar:
 ## **Set Methodlari**  
 Set uchun asosiy metodlar:
 
-| **Method**          | **Tavsif**                                          
 
- | **Misol**                                        |
-|---------------------|------------------------------------------------------|-------------------------------------------------|
-| `add(value)`        | Yangi qiymat qo‘shadi.                               | `set.add(1)`                                    |
-| `delete(value)`     | Qiymatni o‘chiradi.                                  | `set.delete(1)`                                 |
-| `has(value)`        | Qiymat mavjudligini tekshiradi.                      | `set.has(1)` => `true`                          |
-| `size`              | Setdagi elementlar sonini qaytaradi.                 | `set.size` => `1`                               |
-| `clear()`           | Barcha elementlarni o‘chiradi.                       | `set.clear()`                                   |
-| `values()`          | Setdagi barcha qiymatlarni qaytaradi.                | `set.values()` => `Iterator`                    |
-| `keys()`            | Barcha qiymatlarni qaytaradi (Setda kalitlar yo‘q).  | `set.keys()` => `Iterator`                      |
-| `entries()`         | Qiymat-qiymat juftligini qaytaradi.                  | `set.entries()` => `Iterator`                   |
+| **Method**          | **Tavsif**                                          | **Misol**                                       |
+|---------------------|-----------------------------------------------------|------------------------------------------------|
+| `add(value)`        | Yangi qiymat qo‘shadi.                              | `set.add(1)`                                   |
+| `delete(value)`     | Qiymatni o‘chiradi.                                 | `set.delete(1)`                                |
+| `has(value)`        | Qiymat mavjudligini tekshiradi.                     | `set.has(1)` => `true`                         |
+| `size`              | Setdagi elementlar sonini qaytaradi.                | `set.size` => `1`                              |
+| `clear()`           | Barcha elementlarni o‘chiradi.                      | `set.clear()`                                  |
+| `values()`          | Setdagi barcha qiymatlarni qaytaradi.               | `set.values()` => `Iterator`                   |
+| `keys()`            | Barcha qiymatlarni qaytaradi (Setda kalitlar yo‘q). | `set.keys()` => `Iterator`                     |
+| `entries()`         | Qiymat-qiymat juftligini qaytaradi.                 | `set.entries()` => `Iterator`                  |  
+
 
 --- 
-
 
 ## Misollar bilan:
 
